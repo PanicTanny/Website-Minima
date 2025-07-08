@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="assets/images/Minima+Logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - MINIMA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <h1 class="logo">MINIMA</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="bestsellers.html">BESTSELLERS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cont-main">
+    <div class="contact-heading">
+      <h2>Get in Touch</h2>
+      <p>We'd love to hear from you!</p>
+    </div>
+
+    <div class="contact-form">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email address" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="location">
+      <h3>Our Location</h3>
+      <p>Plot.xxx Minima Street, Minima City, India</p>
+      <p>Email: contact@minima.com</p>
+      <p>Phone: +91-9876543210</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p>📞 Contact: +91-9876543210</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/?lang=en">X (Twitter)</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="bestsellers.html">BESTSELLERS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+      </ul>
+    </div>
+  </footer>
+
+   <button class="chatbot">💬</button>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

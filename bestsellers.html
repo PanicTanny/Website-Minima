@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="assets/images/Minima+Logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bestsellers - MINIMA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+   {overflow:auto;}   <!--Scroll Bar -->
+   <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <h1 class="logo">MINIMA</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="bestsellers.html">BESTSELLERS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="best-main">
+    <h2 class="section-title">Our Bestselling Products</h2>
+    <section class="products-grid" id="best-grid">
+      <div class="product">
+        <img src="assets/images/Desk+Lamp.jpg" alt="LED Desk Lamp">
+        <div class="product-title">LED Desk Lamp</div>
+        <div class="product-desc">Our most loved lamp for clean workspaces.</div>
+        <div class="product-price">$45.99</div>
+      </div>
+      <div class=" product " id="featured">
+        <img src="assets/images/Minimal+Clock.jpg" alt="Minimal Clock">
+        <div class="product-title">Minimal Clock</div>
+        <div class="product-desc">A timeless piece for modern interiors.</div>
+        <div class="product-price">$25.00</div>
+      </div>
+      <div class="product">
+        <img src="assets/images/Concrete+Planter.jpg" alt="Concrete Planter">
+        <div class="product-title">Concrete Planter</div>
+        <div class="product-desc">Natural textures meet modern aesthetics.</div>
+        <div class="product-price">$39.99</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p>📞 Contact: +91-9876543210</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/?lang=en">X (Twitter)</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="bestsellers.html">BESTSELLERS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="chatbot">💬</button>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

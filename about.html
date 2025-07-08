@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="assets/images/Minima+Logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - MINIMA</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="dark-mode">
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <h1 class="logo">MINIMA</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="bestsellers.html">BESTSELLERS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-main">
+    <section class="about-section">
+      <h2>About MINIMA</h2>
+      <p>
+        <strong>MINIMA</strong> is a sleek, modern e-commerce platform crafted with minimal design in mind. It offers a curated selection of products that blend style and utility—perfect for modern living spaces. Built with HTML, CSS, and some JavaScript, MINIMA prioritizes performance, elegance, and responsive user experience across all devices.
+      </p>
+    </section>
+
+    <section class="developer-section">
+      <div class="developer-photo">
+        <img src="assets/images/Developer+Image.png" alt="Developer Photo">
+      </div>
+      <h2>About the Developer</h2>
+      <p>
+        Hello! I'm <strong>Tanmay S. Nimje</strong>, the creator of MINIMA. I specialize in building clean, responsive websites that prioritize user experience and performance. This site was built as a minimalist showcase of design and functionality, leveraging front-end technologies without the clutter of heavy frameworks.
+        <br><br>
+        I'm passionate about accessible, aesthetic web development and always looking to improve. Feel free to connect with me!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p>📞 Contact: +91-9876543210</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/?lang=en">X (Twitter)</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="bestsellers.html">BESTSELLERS</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="chatbot">💬</button>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
